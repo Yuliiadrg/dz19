@@ -1,0 +1,89 @@
+@use "variables";
+
+
+.footer {
+    padding: 50px 0;
+    background-color: $second-bg-color;
+
+    &-title {
+        font-family: $second-title;
+        font-size: 32px;
+        line-height: 1.31;
+        letter-spacing: 0.05em;
+        color: $title-color;
+        text-align: center;
+        margin-bottom: 20px;
+
+        @media screen and (min-width: 1440px) {
+            text-align: left;
+            margin-bottom: 30px;
+            font-size: 48px;
+        }
+    }
+
+    &-inform,
+    &-inform__tel {
+        font-family: 'Lato400';
+        font-size: 18px;
+        line-height: 1.66;
+        letter-spacing: 0.1em;
+        color: $title-color;
+        display: block;
+        margin: auto;
+        text-align: center;
+
+        @media screen and (min-width: 1440px) {
+            text-align: left;
+        }
+
+    }
+
+    &-inform__tel {
+        margin-bottom: 15px;
+    }
+
+    &-social {
+
+        &-list {
+            margin: 40px 0;
+            display: flex;
+            justify-content: space-around;
+
+            @media screen and (min-width: 768px) {
+                justify-content: center;
+                gap: 23px;
+            }
+
+        }
+
+        &-item {
+            padding: 10px;
+            border: 1px solid $text-color;
+            fill: $text-color;
+            transition: 0.5s all cubic-bezier(.17, .67, .83, .67);
+
+            &:hover {
+                background-color: $text-color;
+                fill: $bg-color;
+            }
+        }
+    }
+
+    &-copipast-text {
+        font-family: 'Lato400';
+        font-size: 16px;
+        line-height: 1.66;
+        text-align: center;
+        letter-spacing: 0.1em;
+        color: $title-color;
+    }
+
+    &__flex {
+        @media screen and (min-width: 1440px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+    }
+}

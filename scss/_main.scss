@@ -1,0 +1,89 @@
+@use "variables";
+
+.section {
+
+    &-main {
+
+        &__title {
+            font-family: $title-font;
+            font-size: 30px;
+            line-height: 1.67;
+            letter-spacing: 0.05em;
+            color: $title-color;
+            margin-bottom: 40px;
+
+            @media screen and (min-width: 768px) {
+                padding-top: 20px;
+                margin-bottom: 40px;
+                font-size: 33px;
+                line-height: 1.52;
+            }
+
+            @media screen and (min-width: 1440px) {
+                margin-bottom: 70px;
+                font-size: 48px;
+                line-height: 1.33;
+            }
+        }
+    }
+
+    &__title {
+        font-family: $title-font;
+        font-size: 26px;
+        line-height: 1.66;
+        letter-spacing: 0.1em;
+        color: $title-color;
+        margin-bottom: 40px;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 50px;
+            font-size: 28px;
+        }
+    }
+
+    &__text {
+        font-family: $font-main;
+        font-size: 16px;
+        line-height: 2.0;
+        letter-spacing: 0.05em;
+        color: $text-color;
+
+        &:not(:last-child) {
+            margin-bottom: 35px;
+        }
+    }
+
+    &__img {
+
+        img {
+            display: block;
+            width: 100%;
+            margin-bottom: 20px;
+            object-fit: cover;
+
+            // @media screen and (min-width: 768px) {
+            //     width: 100%;
+            //     object-fit: cover;
+            // }
+
+            // @media screen and (min-width: 1440px) {
+            //     width: 100%;
+            //     object-fit: cover;
+            // }
+        }
+    }
+
+    &-project__text {
+        @media screen and (min-width: 1440px) {
+            width: 50%;
+        }
+    }
+
+    &-design {
+        padding-bottom: 70px;
+
+        @media screen and (min-width: 768px) {
+            padding-bottom: 90px;
+        }
+    }
+}

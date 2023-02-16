@@ -1,0 +1,32 @@
+@use "variables";
+body {
+  font-family: $font-main;
+  background: $bg-color;
+  color: $title-color;
+}
+.container {
+  padding: 0 10px;
+  min-width: 320px;
+  width: 100%;
+  margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    min-width: 768px;
+    padding: 0 34px;
+  }
+  @media screen and (min-width: 1440px) {
+    min-width: 1440px;
+    padding: 0 135px;
+  }
+}
+.section {
+  padding-top: 70px;
+  @media screen and (min-width: 768) {
+    padding-top: 80px;
+  }
+  @media screen and (min-width: 1440px) {
+    padding-top: 90px;
+  }
+}
+a {
+  cursor: url('../images/cursor.svg'), auto;
+}
