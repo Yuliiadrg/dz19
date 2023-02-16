@@ -1,9 +1,6 @@
 @use "variables";
-
 .section {
-
     &-main {
-
         &__title {
             font-family: $title-font;
             font-size: 30px;
@@ -11,14 +8,12 @@
             letter-spacing: 0.05em;
             color: $title-color;
             margin-bottom: 40px;
-
             @media screen and (min-width: 768px) {
                 padding-top: 20px;
                 margin-bottom: 40px;
                 font-size: 33px;
                 line-height: 1.52;
             }
-
             @media screen and (min-width: 1440px) {
                 margin-bottom: 70px;
                 font-size: 48px;
@@ -26,7 +21,6 @@
             }
         }
     }
-
     &__title {
         font-family: $title-font;
         font-size: 26px;
@@ -34,13 +28,11 @@
         letter-spacing: 0.1em;
         color: $title-color;
         margin-bottom: 40px;
-
         @media screen and (min-width: 768px) {
             margin-bottom: 50px;
             font-size: 28px;
         }
     }
-
     &__text {
         font-family: $font-main;
         font-size: 16px;
@@ -52,24 +44,20 @@
             margin-bottom: 35px;
         }
     }
-
     &__img {
-
         img {
             display: block;
             width: 100%;
             margin-bottom: 20px;
             object-fit: cover;
-
-            // @media screen and (min-width: 768px) {
-            //     width: 100%;
-            //     object-fit: cover;
-            // }
-
-            // @media screen and (min-width: 1440px) {
-            //     width: 100%;
-            //     object-fit: cover;
-            // }
+            @media screen and (min-width: 768px) {
+                width: 100%;
+                object-fit: cover;
+            }
+            @media screen and (min-width: 1440px) {
+                width: 100%;
+                object-fit: cover;
+            }
         }
     }
 

@@ -1,13 +1,11 @@
 @use "variables";
 .header {
     padding: 18px 0;
-
     &__logo {
         font-family: $font-main;
         font-size: 16px;
         line-height: 1.50;
         letter-spacing: 0.5em;
-        color: $title-color;
     }
     @media screen and (min-width: 1440px) {
         padding: 38px 0;
